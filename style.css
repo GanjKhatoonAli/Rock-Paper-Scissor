@@ -1,0 +1,91 @@
+/* Full viewport height with gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+     background: linear-gradient(135deg, black 0%, rgb(32, 31, 31) 100%); 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQemjT66WHze5wIgbo-GVPh4p57WhFth0ffTQ&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    background: linear-gradient(135deg, black 0%, rgb(70, 67, 67) 100%); 
+    padding: 20px 60px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 2px 3px 9px beige, -2px -2px 5px rgb(179, 146, 103);
+    cursor: pointer;
+
+}
+/* Game title */
+h1 {
+    font-size: 3.5rem;
+ text-shadow:  4px 4px 9px rgb(233, 22, 233);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  margin-bottom: 3rem;
+}
+/* Buttons container to keep spacing consistent */
+button {
+    font-size: 3rem;
+    margin: 0 15px;
+    padding: 20px 30px;
+    border: 2px solid rgb(158, 156, 156);
+    border-radius: 40px;
+    outline-offset: 2px;
+    background:black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+}
+
+/* Hover effect on buttons */
+button:hover {
+    background: rgba(66, 61, 61, 0.35);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Score display styling */
+#score {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+@media (max-width: 760px) {
+    .main {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    button {
+        font-size: 2rem;
+        padding: 15px 20px;
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
+}
